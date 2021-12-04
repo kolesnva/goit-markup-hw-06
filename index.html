@@ -316,7 +316,8 @@
             name="footer-user-email"
             class="footer-input"
             id="footer-user-email"
-            placeholder="E-mail">
+            placeholder="E-mail"
+            required>
             <button type="submit" class="button footer-button">Подписаться <svg class="sub-icon" width="24" height="24">
                 <use href="./images/icons.svg#telegram" </use>
                 </svg>
@@ -326,7 +327,7 @@
         </form>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
             <button type="button" class="button modal-close-btn" data-modal-close>
                 <svg class="close-icon" width="18px" height="18px">
@@ -343,6 +344,9 @@
                     required
                     title="Имя"
                     id="user-name">
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/icons.svg#dude"></use>
+                    </svg>
                 </div>
                 <div class="form-field">
                     <label for="user-tel" class="input-label">Телефон</label>
@@ -352,6 +356,9 @@
                     required
                     title="Телефон"
                     id="user-tel">
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/icons.svg#cellphone"></use>
+                    </svg>
                 </div>
                 <div class="form-field">
                     <label for="user-email" class="input-label">Почта</label>
@@ -361,6 +368,9 @@
                     required
                     title="Почта"
                     id="user-email">
+                    <svg class="input-icon" width="18" height="18">
+                        <use href="./images/icons.svg#email"></use>
+                    </svg>
                 </div>
                 <div class="comment-field">
                     <label for="modal-comment" class="input-label">Комменарий</label>
@@ -373,6 +383,6 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 </html>
