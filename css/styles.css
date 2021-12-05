@@ -876,6 +876,9 @@ img {
   letter-spacing: 0.01em;
   color: var(--main-text-color);
 }
+.comment-field {
+  margin-bottom: 20px;
+}
 .modal-comment-area {
   resize: none;
   width: 100%;
@@ -898,8 +901,13 @@ img {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
+.modal-checkbox-field {
+  margin-bottom: 30px;
+}
 .modal-check-text {
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -909,24 +917,25 @@ img {
   color: var(--main-text-color);
 }
 .modal-check-text span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-black-color);
   border-radius: 2px;
   margin-right: 8px;
 }
-/* .modal-check-text::before {
-  content: "";
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--main-black-color);
-  border-radius: 2px;
-  margin-right: 8px;
-  display: block;
+.icon-check {
+  fill: transparent;
 }
-.modal-check:checked + .modal-check-text::before {
+.modal-check:checked + .modal-check-text span {
   background-color: var(--main-blue-color);
-} */
+  border: none;
+}
+.modal-check:checked + .modal-check-text .icon-check {
+  fill: var(--main-white-color);
+}
 .terms-link {
   font-family: Roboto, sans-serif;
   font-style: normal;
