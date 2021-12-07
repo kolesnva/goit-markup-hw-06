@@ -884,9 +884,11 @@ img {
   color: var(--main-text-color);
 }
 .comment-field {
-  margin-bottom: 16px;
+  display: block;
+  margin-bottom: 20px;
 }
 .modal-comment-area {
+  display: block;
   resize: none;
   width: 100%;
   height: 120px;
@@ -936,13 +938,14 @@ img {
 .icon-check {
   fill: transparent;
 }
-.modal-check:checked,
 .modal-check:focus + .modal-check-text span {
+  border-color: var(--main-blue-color);
+}
+.modal-check:checked + .modal-check-text span {
   background-color: var(--main-blue-color);
   border: none;
 }
-.modal-check:checked,
-.modal-check:focus + .modal-check-text .icon-check {
+.modal-check:checked + .modal-check-text .icon-check {
   fill: var(--main-white-color);
 }
 .terms-link {
